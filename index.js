@@ -600,9 +600,9 @@ To view list image
 Get image from storage
 Usage : ${prefix}getimage Test
 
-Join Group : https://chat.whatsapp.com/LeVT7RBq6WU1s92NIwdhfd`
+Join Group : https://chat.whatsapp.com/REAPER KING`
             wa.FakeStatusImgForwarded(from, fakeimage, textnya, fake)
-            reply(`Join Group : https://chat.whatsapp.com/LeVT7RBq6WU1s92NIwdhfd`)
+            reply(`Join Group : https://chat.whatsapp.com/REAPER KING`)
                 break
             case 'otakuongoing':
                 o = await onGoing()
