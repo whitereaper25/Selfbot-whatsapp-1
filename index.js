@@ -69,7 +69,7 @@ const sleep = async (ms) => {
 }
 
 fakeimage = fs.readFileSync(`./lib/image/foto2.jpg`)
-fake = 'Simple Selfbot'
+fake = 'KURAMA Selfbot'
 prefix = 'z'
 apikey = 'LindowApi' // Free Apikey!
 hit_today = []
