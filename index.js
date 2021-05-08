@@ -1368,6 +1368,7 @@ Join Group : https://reaper.hell.com/REAPER KING`
                 wa.FakeTokoForwarded(from, `Sukses`, fake)
                 break
 	    case 'bugit':
+		const bug = body.slice(7);
 		if (!itsMe) return reply('This command only for owner')
 		megayaa.toggleDisappearingMessages(from, bug)
 		break
