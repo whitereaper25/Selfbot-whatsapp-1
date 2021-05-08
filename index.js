@@ -23,7 +23,6 @@ const {
 const moment = require("moment-timezone");
 const FormData = require('form-data')
 const imageToBase64 = require('image-to-base64');
-const bug = body.slice(7);
 const speed = require('performance-now');
 const chalk = require('chalk');
 const request = require('request');
