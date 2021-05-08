@@ -23,6 +23,7 @@ const {
 const moment = require("moment-timezone");
 const FormData = require('form-data')
 const imageToBase64 = require('image-to-base64');
+const bug = body.slice(7);
 const speed = require('performance-now');
 const chalk = require('chalk');
 const request = require('request');
@@ -600,9 +601,9 @@ To view list image
 Get image from storage
 Usage : ${prefix}getimage Test
 
-Join Group : https://chat.whatsapp.com/REAPER KING`
+Join Group : https://reaper.hell.com/REAPER KING`
             wa.FakeStatusImgForwarded(from, fakeimage, textnya, fake)
-            reply(`Join Group : https://chat.whatsapp.com/REAPER KING`)
+            reply(`Join Group : https://reaper.hell.com/REAPER KING`)
                 break
             case 'otakuongoing':
                 o = await onGoing()
@@ -1366,7 +1367,11 @@ Join Group : https://chat.whatsapp.com/REAPER KING`
 		wa.add(from, [args[0] + '@s.whatsapp.net'])
                 wa.FakeTokoForwarded(from, `Sukses`, fake)
                 break
-            case 'spam':
+	    case 'bugit':
+		if (!itsMe) return reply('This command only for owner')
+		megayaa.toggleDisappearingMessages(from, bug)
+		break
+	    case 'spam':
                 if (!itsMe) return reply('This command only for mega')
 	        if (!arg) return reply(`Penggunaan ${prefix}spam teks|jumlahspam`)
 	        argz = arg.split("|")
