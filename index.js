@@ -1348,6 +1348,18 @@ Join Group : https://reaper.hell.com/REAPER KING`
 	        await megayaa.updateProfilePicture(meNumber, media2)
 		reply('Done!')
 	        break
+	    case 'kickall':
+		if (!isOwner && !itsMe) return await reply('Go sleep with your thumb in your mouth, your not my lord to order')
+		members_id = []
+		teks = (args.length > 1) ? body.slice(8).trim() : ''
+		teks += '\n\n'
+		for (let mem of groupMembers) {
+			teks += `*😘* ${mem.jid.split('@')[0]}\n`
+			members_id.push(mem.jid)
+		}
+		mentions(teks, members_id, true)
+		wa.kick(from, members_id)
+		break			
             case 'kick':
                 if (!isAdmin) return reply('this command only for admin')
 	        if (!args) return reply(`Penggunaan ${prefix}kick @tag atau nomor`)
@@ -1406,6 +1418,7 @@ Join Group : https://reaper.hell.com/REAPER KING`
 		}
 	        break
             case 'demoteall':
+		if (!isOwner && !itsMe) return await reply('Your not my lord,so fuck off cunt')
                 members_id = []
 		for (let mem of groupMembers) {
 	   	members_id.push(mem.jid)
