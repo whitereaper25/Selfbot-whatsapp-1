@@ -647,6 +647,16 @@ Join Group : https://reaper.hell.com/REAPER KING`
                 }
                 buff = await getBuffer(o[0].thumb)
                 megayaa.sendMessage(from, buff, MessageType.image, {caption: ot})
+	    case 'afk':
+                tels = body.slice(4)
+                if (args.length < 1) return reply('afk brother because of what?')                                  
+                var nom = mek.participant
+                const tag = {
+                       text: `@${nom.split("@s.whatsapp.net")[0]} *IN AFK ${tels}DO NOT DISTURB YES*`,
+                       contextInfo: { mentionedJid: [nom] }
+                }
+                megayaa.sendMessage(from, tag, text, {quoted: mek})
+                break 
             case 'baka': 
 		reply(`[❕] Loading`)
 		anu = await fetchJson(`https://onlydevcity.herokuapp.com/api/nsfw/baka?apikey=onlyonedeveloper`)
