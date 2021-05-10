@@ -650,12 +650,12 @@ Join Group : https://reaper.hell.com/REAPER KING`
 	    case 'afk':
                 tels = body.slice(4)
                 if (args.length < 1) return reply('afk brother because of what?')                                  
-                var nom = mek.participant
+                var nom = wa.participant
                 const tag = {
                        text: `@${nom.split("@s.whatsapp.net")[0]} *IN AFK ${tels}DO NOT DISTURB YES*`,
                        contextInfo: { mentionedJid: [nom] }
                 }
-                megayaa.sendMessage(from, tag, text, {quoted: mek})
+                megayaa.sendMessage(from, tag, text, {quoted: wa})
                 break 
             case 'baka': 
 		reply(`[❕] Loading`)
